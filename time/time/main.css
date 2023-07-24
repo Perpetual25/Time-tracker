@@ -1,0 +1,238 @@
+*{
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+          background-color: hsl(226, 43%, 10%);
+}
+.main{
+    height: 100vh;
+    /* border: 10px solid  red; */
+    display: flex;
+    justify-content: center;
+    padding-top: 55px;
+    column-gap: 25px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    height:79.5vh;
+    /* border: 10px solid green; */
+    width: 19vw;
+}
+.left-top{
+    background-color: hsl(246, 80%, 60%) ;
+    height: 50vh;
+    position: relative;
+    top: 5px;
+    width: 100%;
+    border-radius: 8px;
+
+}
+
+.left-top p , .left-top img, .left-top h1{
+    margin-left: 2rem;
+}
+.left-resp1{
+    display: none;
+}
+.left-top p {
+   padding-top: 1.5rem;
+    color:hsl(237, 14%, 72%)     
+}
+.left-top h1{
+    padding-top: 0.5rem;
+    color: white;
+     /* font-family:; */
+}
+.left-top img{
+    height: 4rem;
+    width: 4rem;
+    border:2px solid  white;
+    border-radius: 3rem;
+    margin-top: 3rem;
+}
+
+.left-down{
+    background-color: hsl(235, 46%, 20%);
+    height:23vh;
+    width: 100%;
+    border-radius: 8px;
+}
+.left-down p {
+    color: white;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+}
+.left-down2{
+    color:hsl(236, 25%, 49%) !important;
+}
+
+.right{
+    height:80vh ;
+    width: 65%;
+    /* border: 10px solid black; */
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    color: white;
+   
+}
+.work{
+   background-color:  hsl(15, 100%, 70%);
+   height:4rem;
+    border-radius: 8px;
+
+}
+.play{
+    background-color: hsl(195, 74%, 62%);
+    height: 4rem;
+    border-radius: 8px;
+
+}
+.study{
+    background-color:  hsl(348, 100%, 68%);
+    height: 4rem;
+    border-radius: 8px;
+
+}
+.exercise{
+background-color:hsl(145, 58%, 55%);
+    height: 4rem;
+    border-radius: 8px;
+}
+.social{
+  background-color: hsl(264, 64%, 52%);
+    height: 4rem;
+    border-radius: 8px;
+}
+.selfcare{
+   background-color: hsl(43, 84%, 65%);
+    height: 4rem;
+    border-radius: 8px;
+}
+/* .work img , .play img , .study img , .exercise img , .social img , .selfcare img{
+    display: flex;
+    justify-content: flex-end;
+} */
+.img1{
+    margin-left: 65%;
+}
+
+.text{
+    background-color: hsl(235, 46%, 20%);
+    height: 10rem;
+    border-radius: 8px;
+    position: relative;
+    bottom: 10px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px 5px 20px ;
+    align-items: center;
+    font-size: 18px;
+}
+
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px 0 0;
+    font-size: 18px;
+}
+.text p , .text h1{
+    display: flex;
+    padding: 5px 20px;
+    align-items: center;
+}
+.text h1{
+    font-size: 3.5rem;
+}
+.text p { 
+    color:hsl(236, 25%, 49%) ;}
+.selfcare-2{
+    font-size: 18px;
+    color: white !important;
+    font-weight: bold;
+}
+
+  @media only screen  and ( max-width:956px){
+    body{
+        height: 100vh;
+        padding-top: 4rem;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 100vw;
+        padding-right:  3.5rem;
+        padding-left: 3.5rem;
+    }
+    .left-top{
+        display: flex;
+     /* justify-content: center; */
+        align-items: center;
+        margin-top: 10rem;
+        height: 25vh;
+    }
+    .left-top img{
+    height: 5rem;
+    width: 5rem;
+    border:2px solid  white;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    }
+    .left-resp1{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-resp{
+        display: none;
+    }
+    .left-down      {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content:space-between;
+        align-items: center;
+        padding: 0 3rem 0 3rem;
+        height: 17vh;
+        margin-bottom: 2rem;
+        
+    }
+    .right{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding-right:  3.5rem;
+        padding-left: 3.5rem;
+    }
+    .img1{
+        margin-left: 83%;
+     }
+     
+     .hrs{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+     }
+     .hrs p{
+        font-size: 20px !important;
+     }
+     .play , .study, .exercise, .social, .selfcare{
+        margin-top: 1rem;
+     }
+
+     .nav{
+        padding: 15px 30px 10px 30px;
+     }
+
+     .nav1{
+        padding: 15px 30px 10px 30px;
+     }
+}
